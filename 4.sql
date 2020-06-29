@@ -15,7 +15,7 @@ ALTER TABLE SEDE
 
 --B. Cambiar el tipo de dato de la columna Ubicación de la tabla Evento por un tipo entero.
 ALTER TABLE EVENTO 
-	ALTER COLUMN ubicacion TYPE INTEGER;
+	ALTER COLUMN ubicacion TYPE INTEGER USING ubicacion::INTEGER;
 
 /*C. Crear una llave foránea en la columna Ubicación de la tabla Evento y 
 referenciarla a la columna código de la tabla Sede, la que fue creada
