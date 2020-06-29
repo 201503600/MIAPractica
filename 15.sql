@@ -5,3 +5,4 @@ ALTER TABLE ATLETA
 	ADD CONSTRAINT CH_edad CHECK (
 			edad < 25
 		); 
+COMMIT;
