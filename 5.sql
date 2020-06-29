@@ -1,0 +1,9 @@
+/*Se revisó la información de los miembros que se tienen actualmente y antes
+de que se ingresen a la base de datos el Comité desea que a los miembros
+que no tengan número telefónico se le ingrese el número por Default 0 al
+momento de ser cargados a la base de datos.*/
+
+ALTER TABLE MIEMBRO
+	ALTER COLUMN telefono SET DEFAULT 0;
+
+COMMIT;
